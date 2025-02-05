@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import '../Styles/Form.css'
+import Axios from "../api/axios";
 
 const TransparentForm = () => {
   const [name, setName] = useState("");
 
   const invitation = (e) => {
     e.preventDefault();
+    Axios.post('/participation',{}).then((res)=>{
+      console.log('sucess');
+      
+    })
 
   };
 

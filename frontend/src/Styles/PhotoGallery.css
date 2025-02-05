@@ -2,28 +2,31 @@
     text-align: center;
     padding: 20px;
   }
-
-  .gal-head{
+  
+  .gal-head {
     font-size: 50px;
     color: #ec4899;
     font-family: "Dancing Script", serif;
-
   }
+  
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Allows the grid to adapt to image size */
+    gap: 10px; /* Reduces the gap between items */
   }
   
   .gallery-item {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
   
   .gallery-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover their container without leaving empty spaces */
     display: block;
     transition: transform 0.3s ease;
   }
@@ -33,26 +36,32 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: hidden; /* Prevents any overflow outside the modal */
   }
   
   .modal-content {
     position: relative;
-    max-width: 90%;
-    max-height: 80%;
+    width: 90%;
+    height: 80%; /* Ensure modal content height does not exceed 80% of the viewport height */
     background: white;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow if the image is large */
   }
   
   .modal-image {
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the entire image fits inside the container */
+    display: block; /* Prevents image from being stretched */
   }
   
   .modal-controls {
@@ -60,7 +69,7 @@
     top: 10px;
     right: 10px;
     display: flex;
-    gap: 10px; 
+    gap: 10px;
   }
   
   .close-btn,
@@ -74,7 +83,7 @@
   }
   
   .close-btn {
-    padding-top:1px ;
+    padding-top: 1px;
     font-size: 20px;
     color: black;
   }

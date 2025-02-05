@@ -3,14 +3,31 @@ import '../Styles/PhotoGallery.css';
 import { FaDownload } from "react-icons/fa";
 
 const photos = [
-  { src: "/images/wed1.webp", alt: "Photo 1" },
-  { src: "/images/wed2.webp", alt: "Photo 2" },
-  { src: "/images/wed3.webp", alt: "Photo 3" },
-  { src: "/images/wed4.webp", alt: "Photo 4" },
-  { src:"/images/wed5.webp", alt: "Photo 5" },
-  { src: "/images/wed6.webp", alt: "Photo 6" },
-];
-
+    { src: "/images/MNT_1.jpg", alt: "Photo 1" },
+    { src: "/images/MNT_2.jpg", alt: "Photo 2" },
+    { src: "/images/MNT_3.jpg", alt: "Photo 3" },
+    { src: "/images/MNT_4.jpg", alt: "Photo 4" },
+    { src: "/images/MNT_5.jpg", alt: "Photo 5" },
+    { src: "/images/MNT_6.jpg", alt: "Photo 6" },
+    { src: "/images/MNT_7.jpg", alt: "Photo 7" },
+    { src: "/images/MNT_8.jpg", alt: "Photo 8" },
+    { src: "/images/MNT_9.jpg", alt: "Photo 9" },
+    { src: "/images/MNT_10.jpg", alt: "Photo 10" },
+    { src: "/images/MNT_11.jpg", alt: "Photo 11" },
+    { src: "/images/MNT_12.jpg", alt: "Photo 12" },
+    { src: "/images/MNT_13.jpg", alt: "Photo 13" },
+    { src: "/images/MNT_14.jpg", alt: "Photo 14" },
+    { src: "/images/MNT_15.jpg", alt: "Photo 15" },
+    { src: "/images/MNT_16.jpg", alt: "Photo 16" },
+    { src: "/images/MNT_17.jpg", alt: "Photo 17" },
+    { src: "/images/MNT_18.jpg", alt: "Photo 18" },
+    { src: "/images/MNT_19.jpg", alt: "Photo 19" },
+    { src: "/images/MNT_20.jpg", alt: "Photo 20" },
+    { src: "/images/MNT_21.jpg", alt: "Photo 21" },
+    { src: "/images/MNT_23.jpg", alt: "Photo 23" },
+    { src: "/images/MNT_24.jpg", alt: "Photo 24" },
+    { src: "/images/MNT_25.jpg", alt: "Photo 25" },
+  ];
 const PhotoGallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
