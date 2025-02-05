@@ -8,6 +8,13 @@ const TransparentForm = () => {
   const [phoneNumber,setPhoneNumber]=useState('')
   const [isAttending,setIsAttending]=useState(true)
 
+  function clearForm(){
+    firstName('')
+    lastName('')
+    phoneNumber('')
+  
+  }
+
 
   const invitation = (e) => {
   console.log('hiiii');
@@ -18,7 +25,7 @@ const TransparentForm = () => {
       console.log('sucess',res);
       
     })
-
+    clearForm()
   };
 
   return (
