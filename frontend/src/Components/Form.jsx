@@ -23,7 +23,7 @@ const TransparentForm = () => {
         <label htmlFor="email">Your Email</label>
         <input type="email" id="email" />
 
-        <button onClick={invitation}>Are You Attending</button>
+        <button onClick={invitation}>Are You Attending! Yes I am Attending</button>
       </form>
     </div>
     </div>
