@@ -1,0 +1,76 @@
+/* Couplename.css */
+
+.couple-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/couple.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+  }
+  
+  .couple-details {
+    text-align: center;
+    color: white;
+    font-family: "Dancing Script", serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .couple-name {
+    font-size: 40px;
+  }
+  
+  .wedding-text {
+    font-size: 25px;
+  }
+  
+  .countdown-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .countdown-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 24px;
+    position: relative;
+  }
+  
+  .pink {
+    background-color: #ec4899; /* Tailwind Pink 500 */
+  }
+  
+  .green {
+    background-color: #ec4899; /* Tailwind Green 500 */
+  }
+  
+  .time-label {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .big-day {
+    color: white;
+    background-color: #bbf7d0; /* Light Green */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  

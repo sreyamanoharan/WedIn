@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Couplename from './Components/Couplename'
 import Form from './Components/Form'
+import PhotoGallery from './Components/PhotoGallery'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
     <Navbar/>
     <Couplename/>
+    <PhotoGallery/>
     <Form/>
     </>
   )
