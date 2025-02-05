@@ -9,9 +9,9 @@ const TransparentForm = () => {
   const [isAttending,setIsAttending]=useState(true)
 
   function clearForm(){
-    firstName('')
-    lastName('')
-    phoneNumber('')
+    setFirstName('')
+    setLastName('')
+    setPhoneNumber('')
   
   }
 
