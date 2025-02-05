@@ -1,0 +1,62 @@
+body {
+    /* background-image: url('/images/weddingone') no-repeat center center fixed; */
+    background-size: cover;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/weddingtwo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .transparent-form {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .transparent-form label {
+    font-weight: bold;
+    color: white; /* Ensures visibility */
+  }
+  
+  .transparent-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+  }
+  
+  .transparent-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .transparent-form button:hover {
+    background: rgba(0, 123, 255, 1);
+  }
+  
+  .heading{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    color: white;
+  }
