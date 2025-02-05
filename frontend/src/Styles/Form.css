@@ -29,7 +29,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 90px; /* Moves the form down */
 }
+
 
 .transparent-form label {
   font-weight: bold;
