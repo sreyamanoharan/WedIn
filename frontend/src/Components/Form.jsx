@@ -12,7 +12,8 @@ const TransparentForm = () => {
   return (
     <div>
     <div className="heading">
-    <p>Are You Attending?</p>
+    <p>Are You Attending?</p><br/>
+    <h6>Please Fill-up the form to notify that you're attending. Thanks </h6>
     </div>
     <div className="form-container" style={{backgroundImage:URL}}>
       <form className="transparent-form">

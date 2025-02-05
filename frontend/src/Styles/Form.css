@@ -53,10 +53,28 @@ body {
     background: rgba(0, 123, 255, 1);
   }
   
-  .heading{
+  .heading {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-    color: white;
+    top: 110%; 
+    left: 35%;
+    /* Adjust this value to position the text above the form */
+    text-align: center;
+    z-index: 1; /* Ensures text is above the form */
   }
+  
+  .heading p {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Dancing Script", serif;
+    color: rgba(255, 255, 255, 0.9); /* White text with slight transparency */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow for better readability */ 
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .heading h6{
+    font-size: 20px;
+    color: white;
+   
+
+  }
+  
