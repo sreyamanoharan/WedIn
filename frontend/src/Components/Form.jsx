@@ -17,11 +17,12 @@ const TransparentForm = () => {
     </div>
     <div className="form-container">
       <form className="transparent-form">
-        <label htmlFor="name">Your Name</label>
+        <label htmlFor="name">First Name</label>
         <input type="text" id="name" onChange={(e) => setName(e.target.value)} />
-
-        <label htmlFor="email">Your Email</label>
-        <input type="email" id="email" />
+        <label htmlFor="name">Second Name </label>
+        <input type="text" id="name" />
+        <label htmlFor="number">phone</label>
+        <input type="number" id="number"></input>
 
         <button onClick={invitation}>Are You Attending! Yes I am Attending</button>
       </form>
