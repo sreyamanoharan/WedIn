@@ -43,21 +43,19 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: rgba(0, 123, 255, 0.8);
+    background-color: #ec4899;
     color: white;
     font-weight: bold;
     cursor: pointer;
   }
   
   .transparent-form button:hover {
-    background: rgba(0, 123, 255, 1);
+    background-color: #ec4899;
   }
   
-  .heading {
+   .heading {
     position: absolute;
-    top: 110%; 
-    left: 35%;
-    /* Adjust this value to position the text above the form */
+    align-items: center;
     text-align: center;
     z-index: 1; /* Ensures text is above the form */
   }
@@ -65,15 +63,21 @@ body {
   .heading p {
     font-size: 50px;
     font-weight: bold;
+    margin-left: 480px;
     font-family: "Dancing Script", serif;
-    color: rgba(255, 255, 255, 0.9); /* White text with slight transparency */
+    color: #ec4899;
+    
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow for better readability */ 
     border-radius: 10px;
     display: inline-block;
   }
   .heading h6{
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 400px;
     color: white;
+    font-family: "Niramit", serif;
+    z-index: 1;
    
 
   }
