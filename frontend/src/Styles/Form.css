@@ -1,84 +1,118 @@
 body {
-    /* background-image: url('/images/weddingone') no-repeat center center fixed; */
-    background-size: cover;
-  }
-  
-  .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('/images/weddingtwo.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .transparent-form {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .transparent-form label {
-    font-weight: bold;
-    color: white; /* Ensures visibility */
-  }
-  
-  .transparent-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    color: black;
-  }
-  
-  .transparent-form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ec4899;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .transparent-form button:hover {
-    background-color: #ec4899;
-  }
-  
-   .heading {
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    z-index: 1; /* Ensures text is above the form */
-  }
-  
-  .heading p {
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 480px;
-    font-family: "Dancing Script", serif;
-    color: #ec4899;
-    
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Shadow for better readability */ 
-    border-radius: 10px;
-    display: inline-block;
-  }
-  .heading h6{
-    font-size: 17px;
-    margin-top: 5px;
-    margin-left: 400px;
-    color: white;
-    font-family: "Niramit", serif;
-    z-index: 1;
-   
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
 
+/* Background and Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/weddingtwo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+
+/* Transparent Form */
+.transparent-form {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transparent-form label {
+  font-weight: bold;
+  color: white;
+}
+
+.transparent-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.transparent-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ec4899;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.transparent-form button:hover {
+  background-color: #ec4899;
+}
+
+/* Heading Section */
+.heading {
+  position: absolute;
+  text-align: center;
+  padding-top: 6px;
+  left: 50%;  /* Adjust position to center */
+  transform: translateX(-50%); /* Fix horizontal centering */
+  z-index: 10;
+  width: 100%;
+}
+
+.heading p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Dancing Script", serif;
+  color: #ec4899;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+.heading h6 {
+  font-size: 17px;
+  color: white;
+  font-family: "Niramit", serif;
+}
+
+/* 🎯 Responsive Styles */
+@media (max-width: 768px) {
+  .heading p {
+      font-size: 35px; /* Smaller title for tablets */
   }
-  
+
+  .heading h6 {
+      font-size: 14px;
+  }
+
+  .transparent-form {
+      width: 90%; /* More width on tablets */
+      max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading p {
+      font-size: 30px; /* Smaller title for phones */
+  }
+
+  .heading h6 {
+      font-size: 12px;
+  }
+
+  .transparent-form {
+      width: 90%;
+      max-width: 280px;
+  }
+}

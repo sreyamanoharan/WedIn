@@ -24,11 +24,14 @@
   }
   
   .couple-name {
-    font-size: 40px;
-  }
+    font-size: 60px;
+   
+  }  
+
   
   .wedding-text {
     font-size: 25px;
+    font-family: "Josefin Sans", serif;
   }
   
   .countdown-container {
@@ -36,6 +39,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    font-family: "Josefin Sans", serif;
+
   }
   
   .countdown-circle {
