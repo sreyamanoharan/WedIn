@@ -6,7 +6,7 @@ const TransparentForm = () => {
 
   const invitation = (e) => {
     e.preventDefault();
-    alert(`Invitation sent to ${name}`);
+
   };
 
   return (
@@ -23,7 +23,7 @@ const TransparentForm = () => {
         <label htmlFor="email">Your Email</label>
         <input type="email" id="email" />
 
-        <button onClick={invitation}>Are You Attending! Yes I am Attending</button>
+        <button onClick={invitation}>Yes I am Attending</button>
       </form>
     </div>
     </div>
