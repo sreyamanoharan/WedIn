@@ -12,9 +12,10 @@ function App() {
   return (
     <>
     <Couplename/>
+    <Form/>
     <PhotoGallery/>
     <Schedule/>
-    <Form/>
+
     </>
   )
 }
