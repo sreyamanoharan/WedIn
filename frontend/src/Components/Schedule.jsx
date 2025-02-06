@@ -8,7 +8,7 @@ const Schedule = () => {
      
 
     <div className="schedule-container" >
-    <h2 className="wed-head">Wedding Event</h2>
+    <h2 className="wed-head">Wedding Events</h2>
       <div className="event-card">
         <div className="event-card-content">
           <p className="headwed">Wedding</p>
